@@ -1,32 +1,27 @@
 import React from "react";
 import {
   Head,
-  AnchorHeader,
-  SiteName,
-  SiteDesc,
+  LogoContainer,
+
   Navigator,
   NavigationList,
   NavigationElement
 } from "./styles";
 import { NavigatonLink } from "../Navigator";
+import { Logo } from "../../assets/svg/svg";
 
 export const Header = () => {
-  const links = ["Inicio", "Acerca de", "Contacto"]
+  const links = ["Inicio", "Acerca de", "Contacto"];
   return (
     <Head>
-      <AnchorHeader href="#">
-        <SiteName>FranciscoAMK</SiteName>
-        <SiteDesc class="site-desc">
-          Diseño web / WordPress / Tutoriales
-        </SiteDesc>
-      </AnchorHeader>
+      <LogoContainer href="#">
+        <Logo/>
+      </LogoContainer>
       <Navigator>
         <NavigationList>
-          {
-              links.map= (link) => {
-                <NavigatonLink path={link} description={link}/>
-              }
-          }
+          {links.map(link => (
+            <NavigatonLink path={link} description={link} />
+          ))}
         </NavigationList>
       </Navigator>
     </Head>

@@ -1,9 +1,10 @@
 import React from "react";
+import { NavigationElement, NavigationRedirect } from "./styles";
 
 export const NavigatonLink = ({ path, description }) => {
   return (
     <NavigationElement>
-      <NavigationLink href={path}>{description}</NavigationLink>
+      <NavigationRedirect href={path}>{description}</NavigationRedirect>
     </NavigationElement>
   );
 };
