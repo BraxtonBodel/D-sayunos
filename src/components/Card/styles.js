@@ -36,5 +36,8 @@ export const CardTitle = styled.div`
     border-radius: 0px 0px 40px 40px;
     font-weight: bold;
     font-size: 30px;
-    height: 40px;
+`;
+
+export const CardDescription = styled.p`
+    font-size: 15px
 `;

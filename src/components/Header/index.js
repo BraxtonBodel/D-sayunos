@@ -24,7 +24,7 @@ export const Header = () => {
     <Navigator>
       <NavigationList>
         {links.map(link => (
-          <NavigatonLink key={link} path={link} description={link} />
+          <NavigatonLink key={link} description={link} />
         ))}
       </NavigationList>
     </Navigator>
